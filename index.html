@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navigation Bar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-100 to-purple-100 p-6">
+    <img src="./images/profile.jpg" alt="My Cartoon Photo" class="w-32 h-32 rounded-full mb-4 shadow-md">
+    <h2 class="text-3xl font-bold">Hi, I'm Seerat</h2>
+    <p class="text-xl mt-2 text-gray-700">Web Developer | Designer | Tech Enthusiast</p>
+    <p class="italic mt-1">"Creating elegant solutions with clean code"</p>
+    <a href="#" class="mt-5 inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Download Resume</a>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="container mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-center mb-6">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <p class="text-lg">I'm Seerat, passionate about coding and building modern, responsive websites. I enjoy turning ideas into reality using clean code and modern design.</p>
+        <p class="mt-4">I’m continuously learning and improving my skills to become a full-stack developer.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mt-4 mb-2">Skills:</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>HTML</li>
+          <li>Tailwind CSS</li>
+          <li> Basic JavaScript</li>
+         
+        </ul>
+        <h3 class="font-semibold mt-6 mb-2">Education:</h3>
+        <p>🎓Computer Engineering – Guru Nanak Dev University (2024 - 2028)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-100 px-6 py-12">
+    <h2 class="text-2xl font-bold text-center mb-8">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <!-- Project Card 1 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition p-4">
+        <img src="./images/project1.png" alt="Project 1" class="rounded mb-3">
+        <h3 class="text-lg font-semibold">Landing Page</h3>
+        <p class="text-sm text-gray-600">A clean landing page using HTML and Tailwind. Fully responsive and elegant.</p>
+        <a href="#" class="text-blue-500 text-sm mt-2 inline-block">GitHub →</a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition p-4">
+        <img src="./images/project2.png" alt="Project 2" class="rounded mb-3">
+        <h3 class="text-lg font-semibold">Portfolio Website</h3>
+        <p class="text-sm text-gray-600">My personal portfolio showcasing skills and projects. Uses Tailwind layout system.</p>
+        <a href="#" class="text-blue-500 text-sm mt-2 inline-block">GitHub →</a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition p-4">
+        <img src="./images/project3.png" alt="Project 3" class="rounded mb-3">
+        <h3 class="text-lg font-semibold">Blog UI</h3>
+        <p class="text-sm text-gray-600">A dummy blog layout with hover effects and UI elements. Great for practice.</p>
+        <a href="#" class="text-blue-500 text-sm mt-2 inline-block">GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-center mb-6">Contact Me</h2>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300">
+      <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300">
+      <textarea placeholder="Your Message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">
+    © 2025 Your Name. Made with ❤ using Tailwind CSS.
+    </footer>
+
+</body>
+</html>
